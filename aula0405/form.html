@@ -19,6 +19,90 @@
         <div>
             <h1>Formulário de Cadastro de Alunos</h1>
             
+            <form action="cadastro.php" method="post">
+                <p>
+                    <label for="nome">Nome do Aluno:</label>
+                    <input type="text" name="txtNome" id="nome" size="60">
+
+                    <label for="senha">Senha do Aluno:</label>
+                    <input type="password" name="txtSenha" id="senha" size="10"
+                    maxlength="8" placeholder="Max. 8 carac.">
+                </p>
+                <p>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="txtEndereco" id="endereco" size="60"
+                    minlength="10">
+                    
+                    <label for="numero">Número:</label>
+                    <input type="number" name="txtNumero" id="numero" min="10"
+                    max="10000" step="5">
+
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="txtCidade" id="cidade" size="30">
+
+                    <label for="estado">Selecione o Estado:</label>
+                    <select>
+                        <option>SP</option>
+                        <option>RJ</option>
+                        <option>ES</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>BA</option>
+                        <option>MA</option>
+                        <option>PI</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="telefone">Telefone do Aluno:</label>
+                    <input type="tel" name="txtTelefone" id="telefone" size="20"
+                    placeholder="(00)00000-0000">
+                </p>
+                <p>
+                    <label for="email">E-Mail do Aluno:</label>
+                    <input type="email" name="txtEmail" id="email" size="100"
+                    minlength="8" maxlength="20" placeholder="seuemail@email.com">
+                </p>
+
+                <label for="dataNasc">Data de Nascimento:</label>
+                <input type="date" name="txtDataNasc" id="dataNasc"
+                min="2000-01-01">
+
+                <p>
+                    <input type="file" name="txtArquivo" id="arquivo">
+                </p>
+
+                <p>
+                    <label for="estCivil">Estado Civil:</label>
+                    <input type="radio" name="txtEstCivil" id="estCivil">Casado
+                    <input type="radio" name="txtEstCivil" id="estCivil">Solteiro
+                    <input type="radio" name="txtEstCivil" id="estCivil">Divorciado
+                    <input type="radio" name="txtEstCivil" id="estCivil">Viúvo
+                </p>
+
+                <p>
+                    <label for="series">Séries/Filmes Preferidas:</label>
+                    <input type="checkbox" name="txtS1" id="series">GOT
+                    <input type="checkbox" name="txtS2" id="series">La casa de Papel
+                    <input type="checkbox" name="txtS3" id="series">Suits
+                    <input type="checkbox" name="txtS4" id="series">Os Parças
+                    <input type="checkbox" name="txtS5" id="series">Minha uma peça III
+                </p>
+
+                <p>
+                    <label for="sugestao">Deixe seu comentário:</label>
+                    <textarea name="txtSugestao" id="sugestao" cols="30" rows="10"></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="LIMPAR">
+                </p>
+
+
+            </form>
+
+
+            
         </div>
         <div>
             <footer>
